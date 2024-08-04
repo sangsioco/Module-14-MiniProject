@@ -1,0 +1,19 @@
+query {
+  getMoviesByGenre(genreId: 1) {
+    id
+    title
+    director
+    year
+    genres {
+      id
+      name
+    }
+  }
+}
+
+query {
+  getGenreByMovie(movieId: 5) {
+    id
+    name
+  }
+}

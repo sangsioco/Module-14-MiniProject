@@ -1,0 +1,81 @@
+UPDATE GENRE:
+mutation {
+  updateGenre(id: 1, name: "Romantic Comedy") {
+    genre {
+      id
+      name
+    }
+  }
+}
+
+CREATE GENRE:
+mutation {
+  createGenre(name: "romantic comedy") {
+    genre {
+      id
+      name
+    }
+  }
+}
+
+DELETE GENRE
+mutation {
+  deleteGenre(id: 1) {
+    success
+    genre {
+      id
+      name
+    }
+  }
+}
+
+CREATE A MOVIE WITH GENRE
+mutation {
+  createMovie(title: "Inception", director: "Christopher Nolan", year: 2010, genreIds: [1, 2]) {
+    movie {
+      id
+      title
+      director
+      year
+      genres {
+        id
+        name
+      }
+    }
+  }
+}
+
+CREATE A MOVIE
+mutation {
+  createMovie(title: "The Notebook", director: "Nick Cassevetes", year: 2006) {
+    movie {
+      id
+      title
+      director
+      year
+    }
+  }
+}
+
+DELETE A MOVIE
+mutation {
+	deleteMovie(id:2) {
+    movie {
+      id
+      title
+      director
+      year
+    }
+  }
+}
+UPDATE A MOVIE
+mutation {
+	updateMovie(id: 3,title: "The Notebook", director: "Nick Cassevetes", year: 2004) {
+    movie {
+      id
+      title
+      director
+      year
+    }
+  }
+}
