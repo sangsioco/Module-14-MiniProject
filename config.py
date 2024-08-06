@@ -1,3 +1,3 @@
 class DevelopmentConfig:
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:CIAjrj202709*!@localhost/movie_db'
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:<your_password>*!@localhost/movie_db'
     debug = True
