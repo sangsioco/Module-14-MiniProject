@@ -30,7 +30,7 @@ Installation:
 3. Install all dependencies based on requirements.txt
 4. Congifure the config.py based on your configuration
 5. Run the application
-6. Open a web browser and go to http://localhost:5000/graphql
+6. Open a web browser and go to http://localhost:5000/graphql or http://127.0.0.1:5000/graphql
 7. You can use the mutation text sample provided in mutation_entry_sample.txt and query text sample provided in query_sample.txt  
    
 
